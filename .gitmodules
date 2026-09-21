@@ -1,0 +1,3 @@
+[submodule "blastem-core"]
+	path = core/blastem
+	url = https://github.com/libretro/blastem.git
