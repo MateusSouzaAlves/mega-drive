@@ -1,0 +1,16 @@
+{
+  "normalization": "UTF-8 text with CRLF normalized to LF",
+  "files": [
+    {
+      "path": "system.c",
+      "upstream_lf_sha256": "8da8170a3439b06f0b329577c7df634f9221076f8ad71ceb7142a12e466957d1",
+      "derived_lf_sha256": "d0d13e311e3691734cf85769e307d43b55bf70967d9dce1ee98350de23672b83"
+    },
+    {
+      "path": "libblastem.c",
+      "upstream_lf_sha256": "751f810daf990b2300c7ee1963769a5339d698a018d058771274003c0de06705",
+      "derived_lf_sha256": "232cb4387e198862f7c5477f30f19df9af50f69dbf2fbae9564c6fc6a88d8fb4"
+    }
+  ],
+  "scope": "Replay of current staged inputs; no claim of matching a historical Play artifact or modification to application runtime."
+}

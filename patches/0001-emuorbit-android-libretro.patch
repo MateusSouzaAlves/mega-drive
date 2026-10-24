@@ -1,8 +1,6 @@
-diff --git a/system.c b/system.c
-index deb4344..734504c 100644
 --- a/system.c
 +++ b/system.c
-@@ -98,8 +98,6 @@ int load_smd_rom(ROMFILE f, void **buffer)
+@@ -98,8 +98,6 @@
  			readsize += read;
  		}
  	} while(read > 0);
@@ -11,3 +9,24 @@ index deb4344..734504c 100644
  	*buffer = buf;
  
  	return readsize;
+--- a/libblastem.c
++++ b/libblastem.c
+@@ -810,8 +810,16 @@
+ 
+ RETRO_API bool retro_unserialize(const void *data, size_t size)
+ {
+-	const size_t *buffer = data;
+-	current_system->deserialize(current_system, (uint8_t *)(buffer + 1), *buffer);
++	if (!data || !current_system || !current_system->deserialize || size < sizeof(size_t)) {
++		return 0;
++	}
++	size_t state_size;
++	memcpy(&state_size, data, sizeof(state_size));
++	if (!state_size || state_size > size - sizeof(size_t)) {
++		return 0;
++	}
++	current_system->deserialize(current_system, (uint8_t *)data + sizeof(size_t), state_size);
++	started = 1;
+ 	return 1;
+ }
+ 

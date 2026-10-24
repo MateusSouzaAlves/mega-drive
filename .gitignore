@@ -1,3 +1,15 @@
 /artifacts/
 /core/blastem/obj/
 /core/blastem/*.so
+
+# Local source qualification output and private material
+/.local/
+/out/
+/build/
+/dist/
+/__pycache__/
+*.pyc
+*.keystore
+*.jks
+*.aab
+*.apk

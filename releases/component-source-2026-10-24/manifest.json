@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "snapshot": "component-source-2026-10-24",
+  "date": "2026-10-24",
+  "repository": "https://github.com/MateusSouzaAlves/mega-drive",
+  "scope": "Reviewed component-source refresh, not all sources of the combined closed application or a legal compliance certificate.",
+  "supersedes_public_commit": "ac258e0734fa7270f33467f6222dd71e49f4d340",
+  "private_source_base_reference": "351b21363200a74b9ed8e6c46303f02b05ffff84",
+  "artifact_binding": {
+    "status": "NOT_ASSERTED_FOR_HISTORICAL_PLAY_OR_ENTIRE_CURRENT_PRIVATE_WORKTREE",
+    "reason": "Exact files and derivations recorded here; old snapshot tags remain immutable. Complete distributed artifact correspondence is a separate verification."
+  },
+  "verification": {
+    "checks": [
+      "PASS_PATCH_REPLAY_AND_TWO_NORMALIZED_DERIVED_SOURCE_HASHES"
+    ],
+    "full_app_build_or_gameplay": false,
+    "save_update_test": false,
+    "legal_combined_work_certificate": false
+  },
+  "upstream_gitlinks": [
+    {
+      "path": "core/blastem",
+      "commit": "f1bc9321879d9c9e435b65de54f2a283560c400f"
+    }
+  ],
+  "files": [
+    {
+      "path": ".gitignore",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 187,
+      "sha256": "945aff7acb8dfe8eac74b7e8c06265fd25e26fcaf8e7f93f2d27fe028346c668"
+    },
+    {
+      "path": ".gitmodules",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 95,
+      "sha256": "d1f261ec33ae994c40e6e578e19346d9efffb199731e66cecef1e84c3a04dcd2"
+    },
+    {
+      "path": "README.md",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 2619,
+      "sha256": "5fe3ff9dd3d887660cfa23a40c24de535b0ea558565f6e50da237a8729b3761e"
+    },
+    {
+      "path": "SOURCE_REFRESH.md",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 977,
+      "sha256": "b62afb04eab0325d9b2ff1f05a587906e168309725e7ccbe5cd05d8701265dd4"
+    },
+    {
+      "path": "patches/0001-emuorbit-android-libretro.patch",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 771,
+      "sha256": "d278fa396ed11b9b4f623cff70776a8cfb68298741278aabbb5ef00224e2ab4d"
+    },
+    {
+      "path": "patches/derived-source-hashes.json",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 677,
+      "sha256": "dd67c6c268e907df58a2f42bafab924437eb56d1f5682e9bc58665f34b3abeac"
+    },
+    {
+      "path": "scripts/build-android-arm64.ps1",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 4790,
+      "sha256": "d738ee8076fc504b548e240024f910d5f9bc3e33d48e1cae66854d8a90381ca8"
+    },
+    {
+      "path": "scripts/verify-source-snapshot.py",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 3431,
+      "sha256": "854b409cd620c16ef630e8aa22d43fc8cdfa37bded9d28c8c68fd17dba4e9c4b"
+    }
+  ]
+}
